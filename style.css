@@ -47,10 +47,51 @@ header {
 }
 button {
     border-radius: 5px;
+    border-color: #3882f6;
     padding: 5px;
     background-color: #3882f6;
     color:#f9faf8;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 5px;
+    margin-left: 10px;
+}
+.button:hover {
+    background-color: #2762c2;
+    border-color: #2762c2;
 }
 .header {
+    padding-top: 100px;
+    padding-bottom: 100px;
     min-height: 400px;
+}
+span{
+    color: #D34531;
+}
+header img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 600px;
+  }
+.header .container{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+  }
+h1{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;
+    padding: 10px;
+   
+   
+}
+p , .li {
+    font-size: 18px;
+    color: #e5e7eb;
+    padding: 10px;
+    max-width: 500px;
+    
+}
+p{
+    text-align: left;
 }
