@@ -99,51 +99,41 @@ img{
     max-width: 500px;
     
 }
-/*Section with images*/
-.img-section {
-    min-height: 400px;
-}
-.section1{
-    max-width: 80%;
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    flex-direction: row;
-    gap: 10px;
-    
-}
-.first-img {
-    flex: 1;
+/*IMG SECTION*/
+.h2-img {
     text-align: center;
-    font-size: 16px;
-}
-.second-img {
-    flex: 1;
-    text-align: center;
-    font-size: 16px;
-}
-.third-img {
-    flex: 1;
-    text-align: center;
-    font-size: 16px;
-}
-.fourth-img {
-    flex: 1;
-    text-align: center;
-    font-size: 16px;
+    font-size: 36px;
+    font-weight:bolder;
+    color: #1F2937;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .section1img{
-    height: auto;
-    width: 200px;
+    width: 250px;
 }
-h2{
-    font-size: 36px;
-    font-weight: extra-bold; 
-    color: #1f2937;
-    text-align: center;
-    padding: 20px;
+.img-section {
+    display: flex;
+    justify-content: center;
+}
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+}
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+   
+}
+.description{
+    font-size: 80%;
+    padding-bottom: 15px;
+    margin-bottom: 60px;
 }
 /*Inspirational Quote Section */
 .quote-section {
@@ -162,7 +152,6 @@ h2{
 /*Call To Action*/
 .call-action {
     max-height: 400px;
-    background-color: #f9faf8;
 
 }
 h3 {
@@ -178,7 +167,7 @@ h3 {
     padding: 50px 75px;
     flex-direction: row;
     border-radius: 5px;
-    margin: 150px;
+    margin: 100px 150px;
     justify-content: center;
     background-color: #3882F6;
     color:#E5E7EB;
@@ -210,9 +199,41 @@ footer {
     text-align: center;
 }
 /*Responsiveness for different screen size*/
-@media screen and (max-width: 768px;) {
-    .section1{
-        flex-direction: column-reverse;
+
+@media(max-width: 768px){
+    .header .container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
-    
-}
+    h1{
+        text-align: center;
+    }
+
+    .section1{
+        min-height: 800px;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        flex-shrink: 1;
+        align-items: center;
+        flex-grow: 1;
+        margin: auto;
+    }
+   .action-container{
+    display: flex;
+    min-width: 80%;
+    flex-direction: column;
+    margin: 30px 30px;
+    padding: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   .action-button {
+    display: flex; 
+     justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+   }
+  }
